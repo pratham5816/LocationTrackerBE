@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/locations")
-@CrossOrigin(origins = "http://localhost:3000")
+// CORS handled globally in WebConfig.java - no need for @CrossOrigin here
 public class LocationController {
     
     @Autowired

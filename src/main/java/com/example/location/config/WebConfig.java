@@ -10,7 +10,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("https://location-tracker-fe.vercel.app/")
+                .allowedOrigins(
+                    "https://location-tracker-fe.vercel.app",  // Production - NO trailing slash
+                    "http://localhost:3000"                     // Development
+                )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
