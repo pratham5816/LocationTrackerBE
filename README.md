@@ -1,3 +1,7 @@
+This backend service was created to test and store user location data collected from the browser. 
+It provides REST APIs to save and retrieve location information, helping validate the complete flow from frontend location access to backend persistence.
+This project will be extended and integrated into a mid-level application where location tracking plays a core role.****
+
 # Location Tracking Backend
 
 Spring Boot REST API for location tracking application.
